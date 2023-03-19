@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90b1b9d22d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="allcontents">
+
+  
+<div id="header">
+    <div class="backgroundimage">
+      <img src="assets/backgroundimage.png" alt="">
+    </div>
+    <div class="container">
+        <nav>   
+        <img src="assets/logo.png" class="logo">
+        <ul id="sidemenu">
+            
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <i class="fas fa-sharp fa-xmark" onclick="closemenu()"></i>     
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+
+        </nav>
+        <div class="header-text">
+            <p>VFX Artist</p>
+            <h1>Hi, I'm <span>Swikar</span><br>Poudel From Nepal</h1>
+        </div>
+        <a href="assets/MyCV.pdf" download class="btn btn2">Download CV</a>
+    </div>
+
+</div>
+
+<!-- -----------------------About---------------------- -->
+
+<div id="about" >
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/user.png" width="604" height="580">
+            </div>
+
+
+
+            <div class="about-col-2">
+                <h2 class="sub-title"> About Me </h2>
+                <p>
+                  This is Swikar Poudel from Pokhara,Nepal. I design characters , rig and animate them . I also can design product and do product animation for any type of brand . 
+                  I also groom realistic fur for different characters in software like Houdini , Blender . I am good at procedural setups and simulation setups for different procedural animation.
+                  I use tools such as blender geometry nodes and different nodes in Houdini for procedural Animation . I like to composite VFX shots that includes
+                  activities such as rotopaint,wire removal, green screen keying, multipass compositing etc. Learning Physics and computer science in High School , I consider
+                  details of realism apsect in vfx shots such as relfection,refraction,lens distortion, glow, chromatic aberration, grain noise and many more .
+                  On top of that I love to watch movies, watch football, swim ,camp in the forest, observe visual complexity of sexy sky and many more.I am a adventurous guy looking for a adventurous project.  <br><br><br>
+                </p>
+                
+                
+                <div class="attributes">
+                
+                <div class="myclass" id="Skills" onclick="changeCss('Skills')">Skills</div>
+                <div class="myclass" id="Experience" onclick="changeCss('Experience')">Experience</div>
+                <div class="myclass" id="Education" onclick="changeCss('Education')">Education</div>
+                
+                <br><br>
+                </div>
+                
+                
+                
+                <div  id="skills">
+                    <ul>
+
+                        <li><div class="skill">
+                            <h3>Hair Grooming [ Houdini ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress groom">75%</div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li><div class="skill">
+                            <h3>Procedural Animation [ Blender and Houdini ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress procedure">70%</div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li><div class="skill">
+                            <h3> Compositing [ Nuke ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress composite">85%</div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li><div class="skill">
+                            <h3> Product and Character Animation [ Blender ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress product">90%</div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li><div class="skill">
+                            <h3> Motion Design [ Blender and Houdini ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress motion">80%</div>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li><div class="skill">
+                            <h3> Simulation [ Houdini ] </h3>
+                            <div class="progress-bar">
+                              <div class="progress sim">55%</div>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                    </div>   
+
+                        
+
+                    <div  id="experience">
+                        <ul>
+                            <li><span style="font-size: 20px;">Freelancer</span><br>
+                            Worked for over 1 year as a freelancer in compositing, hair grooming, 
+                            character animation,
+                            procedural animation, product design and motion design .
+                            </li>
+                            <br><br>
+                            <li><span style="font-size: 20px;">Compostior</span><br>
+                                Worked for about 2 years as a compositor in Cocktail Art Company
+                            </li>
+                        </ul>
+
+                        </div>
+
+
+
+
+                    <div  id="education">
+                        <ul>
+                            <li><span style="font-size: 20px;">Bachelors in Computer Engineering</span><br>
+                            In the well known Pulchowk Engineering Campus - Kathmandu,Nepal</li>
+                            <br><br>
+                            <li><span style="font-size: 20px;">Computer Science</span><br>
+                               Passed High School in Computer Science course in well known College - SOS Gandaki,Nepal. Computer Science course
+                               includes subject such as Physics,Chemistry,Computer,Mathematics,English,Nepali .
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------------------------------------Services --------------------------------------------  -->
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title"> My Services </h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-hippo"></i>
+            <h3>Character Animation </h3>
+            <p>I can rig and animate characters with smooth
+               movements . I rig and animate character
+              in Blender with help of Riggify Addon. </p>
+              <!-- <a href="#"> Learn more</a> -->
+
+          </div>
+
+          <div>
+            <i class="fa-solid fa-circle-radiation"></i>
+            <h3>Compositing </h3>
+            <p>I can composite vfx shots . I have composited different shots in 
+              space . I can do rotoscoping , wire removal , green screen keying, multipass compositing in industry 
+            standard software like Nuke </p>
+              <!-- <a href="#"> Learn more</a> -->
+
+          </div>
+
+          <div>
+            <i class="fa-solid fa-wine-bottle"></i><br>
+            <h3> Product Animation </h3>
+            <p>I have worked on product animation and design for different projects in CocktailArt Company and as a Freelancer. I use procedural tools such 
+              as Blender geometry nodes to create product design and animation. I use Houdini for fancy simulation setups. </p>
+              <!-- <a href="#"> Learn more</a> -->
+
+          </div>
+          
+          <div>
+            <i class="fa-sharp fa-solid fa-cat"></i>
+            <h3>Hair Grooming </h3>
+            <p>I can groom realistic hair for any type of character with 
+              industry standard software like Houdini. Also I can groom hair in 
+              blender with its curve tools .
+            </p>
+              <!-- <a href="#"> Learn more</a> -->
+
+          </div>
+
+          <div>
+            <i class="fa-solid fa-hourglass-start"></i>
+            <h3>Motion Designer</h3>
+            <p>I have worked in motion design projects. I use procedural tools 
+              available in software like Houdini,Blender for creating procedural setups for
+              motion design projects.
+            </p>
+              <!-- <a href="#"> Learn more</a> -->
+
+          </div>
+
+            
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- --------------------------------- Portfolio ---------------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h2 class="sub-title"> Portfolio </h2>
+    <div class="work-list">
+        <div class="work">
+          <img src="assets/work1.png" alt="">
+          <div class="layer">
+            <h3>Lemmings Animation</h3>
+            <p>This is the character I modelled,rigged,groomed and animated in Blender for my personal project taking reference
+              of lemmings in animation series "Grizzy and Lemmings"
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work2.png" alt="">
+          <div class="layer">
+            <h3>Beer Design </h3>
+            <p>This is the design of beer I made for my client . I also made product animation of this beer for my client.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work3.png" alt="">
+          <div class="layer">
+            <h3>Fluid along the Curve</h3>
+            <p>This is  the procedural fluid simulation setup where any fluid follows any curve we draw. I created this for my own personal work.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work4.png" alt="">
+          <div class="layer">
+            <h3>Spaceship in Space</h3>
+            <p>This is the space shot that I made in Nuke with the help of blender for 3d workflow and space design.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work5.png" alt="">
+          <div class="layer">
+            <h3>Cat Grooming</h3>
+            <p>This is the groom that I created in Houdini with
+              exciting and great grooming tools of Houdini . Taking reference
+              of all cats on the Internet, this hair groom was completed .
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work6.png" alt="">
+          <div class="layer">
+            <h3>Snow Man</h3>
+            <p>This is the render that I created for my submission in Fox Render Farm Challenge.This image was choosen as the winnner of Fox Render Farm SnowMan Challenge </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+       
+
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+
+
+
+<!-- ---------------------------------------Contact -------------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h2 class="sub-title">Contact Me</h2>
+        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>poudelswikar1211@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+977 9824126463</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/swikar.poudel.1"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/swikarp/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCxYMdRraQXmzwlx5QFTKyOg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" id="myform">
+          <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" id="Email" placeholder="Your Email" required>
+          <textarea name="Message" id="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msgg"></span>
+        <div id="messageSent" style="display:none;">Message sent!</div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright">
+    <p>Copyright ⓒ Swikar. Made with <i class="fa-solid fa-heart"></i> by Swikar Poudel </p>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------- JS -------------------------------------------------  -->
+<script>
+    document.getElementById('Skills').addEventListener('click', function() {
+        document.getElementById('skills').style.display = 'block';
+        document.getElementById('experience').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+
+
+    });
+
+    document.getElementById('skills').style.display = 'block';
+    document.getElementById('experience').style.display = 'none';
+    document.getElementById('education').style.display = 'none';
+
+
+    document.getElementById('Experience').addEventListener('click', function() {
+        document.getElementById('experience').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+        element.classList.add("clicked");
+  element.classList.remove("attributes");
+    });
+
+    document.getElementById('Education').addEventListener('click', function() {
+        document.getElementById('education').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('experience').style.display = 'none';
+    });
+
+   
+
+var previousClickedElement = null;
+
+window.onload = function() {
+  var defaultClickedElement = document.getElementById("Skills");
+  defaultClickedElement.classList.add("clickedclass");
+  defaultClickedElement.classList.remove("myclass");
+
+  previousClickedElement = defaultClickedElement;
+}
+
+function changeCss(clickedId) {
+  var clickedElement = document.getElementById(clickedId);
+  clickedElement.classList.add("clickedclass");
+  clickedElement.classList.remove("myclass");
+
+  if (previousClickedElement !== null && previousClickedElement !== clickedElement) {
+    previousClickedElement.classList.add("muclass");
+    previousClickedElement.classList.remove("clickedclass");
+  }
+
+  previousClickedElement = clickedElement;
+}
+
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+  sidemenu.style.right="0";
+
+}
+function closemenu(){
+  sidemenu.style.right="-200px";
+  
+}
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwr_Rw4mMuCwTsHVP1k8fVnszx4vK-82gzw2_dGwZjPtvjdyD92diMALA5DTvHSjuWEhw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msgg=document.getElementById("msgg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msgg.innerHTML="Message sent successfully";
+        setTimeout(function(){msgg.innerHTML="" ;},1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+
+const formm = document.querySelector('#myform');
+const messageSent = document.querySelector('#messageSent');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent default form submission behavior
+  
+  const name = document.querySelector('#name').value;
+  const message = document.querySelector('#message').value;
+  
+  // send message using AJAX or other method here
+  
+  messageSent.style.display = 'block'; // show the message
+  formm.reset(); // reset the form after submitting
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
