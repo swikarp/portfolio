@@ -394,6 +394,20 @@ Let's create something magical together!<br><br>
 
 
 <!-- ------------------------------------------------- JS -------------------------------------------------  -->
+ const nameElement = document.getElementById("animated-name");
+const name = "Swikar"; // Replace with your desired name
+let index = 0;
+
+function type() {
+  if (index < name.length) {
+    nameElement.textContent += name.charAt(index);
+    index++;
+    setTimeout(type, 100); // Adjust the typing speed (in milliseconds) here
+  }
+}
+
+type(); // Call the typing function to start the animation
+
 <script>
     document.getElementById('Skills').addEventListener('click', function() {
         document.getElementById('skills').style.display = 'block';
