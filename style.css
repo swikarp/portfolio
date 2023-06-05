@@ -581,3 +581,24 @@ nav .fas{
     color: green;
     font-weight: bold;
   }
+
+
+#animated-name {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: pink; /* Set the color to pink */
+  overflow: hidden;
+  border-right: 0.15em solid pink; /* Add a cursor effect with a pink border */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typing 2s steps(20) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: /*your desired width*/;
+  }
+}
+
