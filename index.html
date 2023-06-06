@@ -395,5 +395,109 @@ Let's create something magical together!<br><br>
 
 <!-- ------------------------------------------------- JS -------------------------------------------------  -->
 
+    
+    
+    <script>
+    document.getElementById('Skills').addEventListener('click', function() {
+        document.getElementById('skills').style.display = 'block';
+        document.getElementById('experience').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+
+
+    });
+
+    document.getElementById('skills').style.display = 'block';
+    document.getElementById('experience').style.display = 'none';
+    document.getElementById('education').style.display = 'none';
+
+
+    document.getElementById('Experience').addEventListener('click', function() {
+        document.getElementById('experience').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+        element.classList.add("clicked");
+  element.classList.remove("attributes");
+    });
+
+    document.getElementById('Education').addEventListener('click', function() {
+        document.getElementById('education').style.display = 'block';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('experience').style.display = 'none';
+    });
+
+   
+
+var previousClickedElement = null;
+
+window.onload = function() {
+  var defaultClickedElement = document.getElementById("Skills");
+  defaultClickedElement.classList.add("clickedclass");
+  defaultClickedElement.classList.remove("myclass");
+
+  previousClickedElement = defaultClickedElement;
+}
+
+function changeCss(clickedId) {
+  var clickedElement = document.getElementById(clickedId);
+  clickedElement.classList.add("clickedclass");
+  clickedElement.classList.remove("myclass");
+
+  if (previousClickedElement !== null && previousClickedElement !== clickedElement) {
+    previousClickedElement.classList.add("muclass");
+    previousClickedElement.classList.remove("clickedclass");
+  }
+
+  previousClickedElement = clickedElement;
+}
+
+var sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+  sidemenu.style.right="0";
+
+}
+function closemenu(){
+  sidemenu.style.right="-200px";
+  
+}
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwr_Rw4mMuCwTsHVP1k8fVnszx4vK-82gzw2_dGwZjPtvjdyD92diMALA5DTvHSjuWEhw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msgg=document.getElementById("msgg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msgg.innerHTML="Message sent successfully";
+        setTimeout(function(){msgg.innerHTML="" ;},1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+
+const formm = document.querySelector('#myform');
+const messageSent = document.querySelector('#messageSent');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent default form submission behavior
+  
+  const name = document.querySelector('#name').value;
+  const message = document.querySelector('#message').value;
+  
+  // send message using AJAX or other method here
+  
+  messageSent.style.display = 'block'; // show the message
+  formm.reset(); // reset the form after submitting
+});
+
+
+
+
+
+</script>
 </body>
 </html>
