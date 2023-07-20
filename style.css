@@ -602,3 +602,20 @@ nav .fas{
   }
 }
 
+
+.go-to-top-btn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.go-to-top-btn:hover {
+  background-color: #555;
+}
+
