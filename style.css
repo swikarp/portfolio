@@ -631,15 +631,15 @@ nav .fas{
 #demo-reel {
     background-color: #000; /* Black background */
     padding: 80px 0;
-    text-align: center;
+    
 }
 
 #demo-reel .sub-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 40px;
     color: #fff; /* White text color */
-    text-align : left;
+    text-align: left;
 }
 
 #demo-reel .video-container {
