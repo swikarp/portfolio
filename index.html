@@ -442,30 +442,27 @@ Let's create something magical together!<br><br>
 
 <!-- Add this script right before the closing </body> tag -->
 <script>
-    const zoomableImages = document.querySelectorAll('.zoomable');
+  const zoomableImages = document.querySelectorAll('.zoomable');
 
-    zoomableImages.forEach(image => {
-        image.addEventListener('click', () => {
-            const zoomedDiv = document.createElement('div');
-            zoomedDiv.classList.add('zoomed');
-            zoomedDiv.innerHTML = `
-                <span class="zoom-close" onclick="closeZoom()">&#10005;</span>
-                <img src="${image.src}" alt="">
-            `;
-            document.body.appendChild(zoomedDiv);
-        });
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', () => {
+      const zoomedDiv = document.createElement('div');
+      zoomedDiv.classList.add('zoomed');
+      zoomedDiv.innerHTML = `
+        <span class="zoom-close" onclick="closeZoom()">&#10005;</span>
+        <img src="${image.src}" alt="">
+      `;
+      document.body.appendChild(zoomedDiv);
     });
+  });
 
-    function closeZoom() {
-        const zoomedDiv = document.querySelector('.zoomed');
-        if (zoomedDiv) {
-            zoomedDiv.remove();
-        }
+  function closeZoom() {
+    const zoomedDiv = document.querySelector('.zoomed');
+    if (zoomedDiv) {
+      zoomedDiv.remove();
     }
+  }
 </script>
-
-
-
 
 
 
