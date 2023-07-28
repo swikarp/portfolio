@@ -683,4 +683,7 @@ nav .fas{
     color: #fff;
     cursor: pointer;
 }
+.magnifying-glass-icon:hover {
+  cursor: pointer;
+}
 
