@@ -388,6 +388,7 @@ ul li span{
 }
 .work:hover .layer{
     height: 100%;
+    
 
 }
 
@@ -406,6 +407,7 @@ ul li span{
 
 .btn:hover{
     background: #ff004f;
+    mouse:cursor;
 }
 
 
