@@ -436,7 +436,7 @@ ul li span{
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+.layer1{
     width: 100%;
     height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
@@ -456,11 +456,11 @@ ul li span{
 
 }
 
-.layer h3{
+.layer1 h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+.layer1 a{
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
