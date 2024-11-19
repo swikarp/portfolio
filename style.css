@@ -410,11 +410,10 @@ ul li span{
     mouse:cursor;
 }
 
-
-/* -------------------------Milestones ------------------- */
+/* -------------------------Portfolio ------------------- */
 #milestone{
     padding: 100px 0;
-    background-color: black;
+    background-color: #000000;
 }
 .work-list{
     display: grid;
@@ -499,23 +498,6 @@ ul li span{
     background: #ff004f;
     mouse:cursor;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
