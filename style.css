@@ -322,6 +322,7 @@ ul li span{
 
 
 /* -------------------------Portfolio ------------------- */
+
 #portfolio{
     padding: 100px 0;
     background-color: #000000;
@@ -331,6 +332,15 @@ ul li span{
     padding: 100px 0;
     background-color: #000000;
 }
+
+#setbgcolor{
+
+    background-color: black;
+}
+
+
+
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
