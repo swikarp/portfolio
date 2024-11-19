@@ -326,6 +326,11 @@ ul li span{
     padding: 100px 0;
     background-color: #000000;
 }
+
+#milestone{
+    padding: 100px 0;
+    background-color: #000000;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
