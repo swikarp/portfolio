@@ -411,11 +411,12 @@ ul li span{
 }
 
 /* -------------------------Milestones ------------------- */
-#milestone{
+#milestone {
     padding: 100px 0;
-    background-color: #000000;
+    background-color: #000000; /* Ensure background is set to black */
 }
-.work-list{
+
+.milestone-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 40px;
@@ -423,13 +424,13 @@ ul li span{
 
 }
 
-.work{
+.milestone{
     border-radius: 10px;
     position: relative;
     overflow:hidden;
 
 }
-.work img{
+.milestone img{
     width: 100%;
     border-radius: 10px;
     display: block;
@@ -472,10 +473,10 @@ ul li span{
     text-align: center;
 
 }
-.work:hover img{
+.milestone:hover img{
     transform: scale(1.1);
 }
-.work:hover .layer{
+.milestone:hover .layer{
     height: 100%;
     
 
