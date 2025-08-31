@@ -1,0 +1,307 @@
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; width: 100%; font-family: Arial, Helvetica, sans-serif; background: #0f0f0f; color: #fff; line-height: 1.5; }
+
+/* ===== Navigation (section list) ===== */
+.hero-sections {
+  position: fixed;
+  top: 20px;
+  left: 50vw;           
+  transform: translateX(-50%);
+  z-index: 1001;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 20px;
+  border-radius: 12px;
+}
+.hero-sections ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.hero-sections a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.hero-sections a:hover { color: #a8a8a8; }
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: flex-start;   /* horizontal left alignment */
+  text-align: left;          /* text aligns left */
+  padding-left: 95px;        /* space from left edge */
+  color: #c0c0c0;
+  background-image: url('images/Background_Image.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+.hero-content { position:relative; z-index: 2; }
+.hero h1 { font-size: 48px; font-weight: 200; letter-spacing: 2px; margin-bottom: 8px; }
+.hero p { font-size: 20px; opacity: 0.9; }
+
+/* ===== Section Base (Unified for all pages) ===== */
+.section, .home-previews, .film-category-grid {
+  padding: 70px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Card style for all sections */
+.card, .preview-card, .film-item {
+  background: linear-gradient(180deg,#141414,#101010);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.04);
+  overflow: hidden;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+.card img, .preview-card img, .film-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.card h3, .preview-card h3, .film-item h3 { margin: 0; font-size: 1.2rem; }
+.card p, .preview-card p, .film-item p { color: #bdbdbd; font-size: 0.9rem; }
+
+/* ===== Unified section headings alignment ===== */
+.film-category-section h2,
+.section h2 {
+    margin-left: 100px;     
+    margin-right: auto;
+    padding-left: 0;       
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* ===== Titles and descriptions inside preview cards ===== */
+.preview-card h3,
+.preview-card p,
+.film-item h3,
+.film-item p {
+    text-align: center;  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ===== Awards Timeline ===== */
+/* ===== Cinematic Awards Timeline ===== */
+/* ===== Cinematic Awards Timeline ===== */
+/* ===== Awards Section: Rounded Box Style ===== */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.award-card {
+  background: #141414;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 25px; /* increased padding for more height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 420px; /* added min-height to make cards taller */
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+.award-card img {
+  width: 150px;  /* increased width */
+  height: 150px; /* increased height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px; /* slightly more spacing below image */
+}
+
+.award-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.award-info h3 {
+  font-size: 1.5rem; /* slightly larger title */
+  color: #fff;
+  margin: 0;
+}
+
+.award-info .timestamp {
+  font-size: 1.1rem; /* slightly bigger timestamp */
+  color: #bdbdbd;
+}
+
+.award-info p {
+  font-size: 1rem; /* slightly bigger description */
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ===== Archive Grid / Masonry-style preview ===== */
+/* ===== Archive Grid / Full-focus images ===== */
+/* ===== Archive Grid ===== */
+/* ===== Archive Grid ===== */
+/* ===== Archive Grid / Artworks ===== */
+/* ===== Archive Grid / Artworks ===== */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* bigger previews */
+  gap: 18px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.archive-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.archive-grid img:hover {
+  transform: scale(1.05);
+}
+
+.archive-card iframe {
+  width: 100%;
+  height: 250px; /* same as your image height */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.archive-card iframe:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+/* ===== Lightbox ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 12px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.lightbox .close:hover {
+  color: #646464;
+}
+
+
+/* ===== About Page ===== */
+.about-wrap { display: grid; grid-template-columns: 280px 1fr; gap: 28px; max-width: 1100px; margin: 0 auto; }
+/*.about-wrap .photo img { width: 100%; border-radius: 8px; object-fit: cover; }*/
+.about-wrap .info h1 { font-size: 28px; margin-bottom: 6px; }
+.about-wrap .info .meta { color: #ddd; margin-bottom: 12px; }
+.about-wrap .info p { color: #cfcfcf; line-height: 1.6; }
+.about-wrap .list { margin-top: 18px; }
+.about-wrap .list h4 { font-size: 14px; margin-bottom: 8px; color: #fff; }
+.about-wrap .list ul { list-style: none; color: #d0d0d0; }
+
+
+.about-wrap .photo {
+  display: flex;
+  flex-direction: column; /* stack images vertically */
+  gap: 12px;              /* space between images */
+}
+.about-wrap .photo img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .hero h1{font-size:34px;}
+  .home-previews img, .card img, .film-item img{max-width:100%;}
+  .about-wrap{grid-template-columns:1fr;}
+  .grid{grid-template-columns: 1fr;}
+  .film-category-section h2,
+  .section h2 {margin-left: 20px; font-size: 24px;}
+}
+
+@media (max-width:700px){
+    .award-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .award-item img { margin-bottom: 8px; }
+    .archive-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+a {
+  color: inherit; /* uses the text color of the parent */
+  text-decoration: none; /* removes underline */
+}
+
+a:hover {
+  color: rgb(255, 255, 255); /* subtle hover effect */
+  text-decoration: underline; /* optional */
+}
